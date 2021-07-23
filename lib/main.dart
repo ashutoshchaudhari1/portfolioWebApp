@@ -33,6 +33,8 @@ class Portfolio extends StatelessWidget {
             CircleAvatar(
               radius: 25,
               backgroundColor: Colors.white,
+              foregroundImage: NetworkImage(
+                  'https://media-exp1.licdn.com/dms/image/C5103AQF1yfJmXtzLvw/profile-displayphoto-shrink_400_400/0/1568488904072?e=1632355200&v=beta&t=Zwc9uuzKPNkUYZPHc2B5WQVgT_Nkde3GbQBx4L23eGQ'),
             ),
             Text(
               'AshuD.',
