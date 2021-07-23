@@ -32,10 +32,33 @@ class Portfolio extends StatelessWidget {
           ContactButton(
             buttonText: 'contact me',
             icon: Icon(Icons.send_sharp),
-            onPressed: () {},
+            onPressed: () {
+              print("ashu.4chaudhari@gmail.com");
+            },
           )
         ],
       ),
+      body: Stack(children: [
+        Row(
+          children: [
+            Expanded(
+              child: Container(
+                color: Colors.black,
+                child: Column(
+                  children: [],
+                ),
+              ),
+            ),
+            Expanded(
+                child: Container(
+              color: Colors.blue,
+              child: Column(
+                children: [],
+              ),
+            ))
+          ],
+        )
+      ]),
     );
   }
 }
