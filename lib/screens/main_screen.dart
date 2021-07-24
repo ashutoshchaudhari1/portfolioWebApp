@@ -45,7 +45,17 @@ class Portfolio extends StatelessWidget {
               child: Container(
                 color: Colors.black,
                 child: Column(
-                  children: [],
+                  children: [
+                    Expanded(
+                        child: Stack(
+                      alignment: Alignment.center,
+                      children: [Image.asset('background1.jpg')],
+                    )),
+                    Text(
+                      'I \'m AshuD. Software developer. \n I buil website \n using Flutter!',
+                      style: TextStyle(color: Colors.blueGrey),
+                    )
+                  ],
                 ),
               ),
             ),
