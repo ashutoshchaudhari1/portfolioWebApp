@@ -40,6 +40,8 @@ class Portfolio extends StatelessWidget {
       ),
       body: Stack(children: [
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
               child: Container(
@@ -51,9 +53,27 @@ class Portfolio extends StatelessWidget {
                       alignment: Alignment.center,
                       children: [Image.asset('background1.jpg')],
                     )),
-                    Text(
-                      'I \'m AshuD. Software developer. \n I buil website \n using Flutter!',
-                      style: TextStyle(color: Colors.blueGrey),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                            'I \'m AshuD. Software developer. \n  buil beautiful website \n using Flutter!',
+                            style: TextStyle(
+                              fontSize: 44.5,
+                              color: Colors.blueGrey,
+                            )),
+                        Align(
+                          alignment: Alignment.centerLeft,
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 75, vertical: 60),
+                            child: ContactButton(
+                                buttonText: 'Drop me a line',
+                                icon: Icon(Icons.mail_outline),
+                                onPressed: () {}),
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
