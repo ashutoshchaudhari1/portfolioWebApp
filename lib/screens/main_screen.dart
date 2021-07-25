@@ -64,6 +64,39 @@ class ButtonRow extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        Container(
+          color: Color(0XFFFBEFD9),
+          child: Row(
+            children: [
+              TextButton.icon(
+                  onPressed: () {},
+                  icon: Image.asset(
+                    'assets/images/instagram.png',
+                    width: 15,
+                    height: 15,
+                  ),
+                  label: Text('')),
+              TextButton.icon(
+                  onPressed: () {},
+                  icon: Image.asset(
+                    'assets/images/linkdn.png',
+                    width: 15,
+                    height: 15,
+                  ),
+                  label: Text('')),
+              TextButton.icon(
+                  onPressed: () {},
+                  icon: Image.asset(
+                    'assets/images/twitter.png',
+                    width: 15,
+                    height: 15,
+                  ),
+                  label: Text('')),
+            ],
+          ),
+        )
+      ],
     );
   }
 }

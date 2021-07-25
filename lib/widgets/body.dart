@@ -26,9 +26,9 @@ class Body extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                        'I \'m AshuD. Software developer. \n  buil beautiful website \n using Flutter!',
+                        'I \'m Ashutosh Chaudhari.             \nSoftware developer. \nbuil beautiful website \nusing React & Flutter! \n   ashu.4chaudhari@gmail.com',
                         style: TextStyle(
-                          fontSize: 44.5,
+                          fontSize: 40.5,
                           color: Colors.blueGrey,
                         )),
                     Align(
