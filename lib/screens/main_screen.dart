@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfoliowebapp/widgets/body.dart';
 import 'package:portfoliowebapp/widgets/contact_button.dart';
 
 class Portfolio extends StatelessWidget {
@@ -39,56 +40,30 @@ class Portfolio extends StatelessWidget {
         ],
       ),
       body: Stack(children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Expanded(
-              child: Container(
-                color: Colors.black,
-                child: Column(
-                  children: [
-                    Expanded(
-                        child: Stack(
-                      alignment: Alignment.center,
-                      children: [Image.asset('background1.jpg')],
-                    )),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                            'I \'m AshuD. Software developer. \n  buil beautiful website \n using Flutter!',
-                            style: TextStyle(
-                              fontSize: 44.5,
-                              color: Colors.blueGrey,
-                            )),
-                        Align(
-                          alignment: Alignment.centerLeft,
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 75, vertical: 60),
-                            child: ContactButton(
-                                buttonText: 'Drop me a line',
-                                icon: Icon(Icons.mail_outline),
-                                onPressed: () {}),
-                          ),
-                        )
-                      ],
-                    )
-                  ],
-                ),
-              ),
+        Body(),
+        Align(
+          alignment: Alignment.bottomLeft,
+          child: Padding(
+            padding: const EdgeInsets.all(48),
+            child: SizedBox(
+              height: 59,
+              child: ButtonRow(),
             ),
-            Expanded(
-                child: Container(
-              color: Colors.blue,
-              child: Column(
-                children: [],
-              ),
-            ))
-          ],
+          ),
         )
       ]),
+    );
+  }
+}
+
+class ButtonRow extends StatelessWidget {
+  const ButtonRow({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
     );
   }
 }

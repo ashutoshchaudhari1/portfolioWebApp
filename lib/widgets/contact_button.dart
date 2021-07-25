@@ -31,7 +31,10 @@ class ContactButton extends StatelessWidget {
           ),
           label: Padding(
             padding: const EdgeInsets.all(10.0),
-            child: Text(buttonText, style: TextStyle(color: Colors.black)),
+            child: Text(buttonText,
+                style: TextStyle(
+                  color: Colors.black,
+                )),
           )),
     );
   }

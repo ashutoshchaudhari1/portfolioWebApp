@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:portfoliowebapp/screens/main_screen.dart';
-import 'package:portfoliowebapp/widgets/contact_button.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,4 +19,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
