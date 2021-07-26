@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfoliowebapp/util/util.dart';
 import 'package:portfoliowebapp/widgets/contact_button.dart';
 
 class Body extends StatelessWidget {
@@ -39,7 +40,9 @@ class Body extends StatelessWidget {
                         child: ContactButton(
                             buttonText: 'Drop me a line',
                             icon: Icon(Icons.mail_outline),
-                            onPressed: () {}),
+                            onPressed: () {
+                              launchMailto();
+                            }),
                       ),
                     )
                   ],
@@ -50,9 +53,49 @@ class Body extends StatelessWidget {
         ),
         Expanded(
             child: Container(
-          color: Colors.blue,
+          color: Colors.black,
           child: Column(
-            children: [],
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                height: 100,
+              ),
+              Text(
+                'My projects',
+                style: TextStyle(
+                    color: Colors.orange,
+                    fontSize: 23,
+                    fontWeight: FontWeight.w600),
+              ),
+              Expanded(
+                  child: ListView.builder(
+                itemCount: 8,
+                itemBuilder: (context, index) {
+                  return Container(
+                    color: Colors.black.withAlpha(23),
+                    child: Column(
+                      children: [
+                        Card(
+                          color: Colors.blueAccent,
+                          elevation: 3,
+                          child: Column(
+                            children: [
+                              ListTile(
+                                title: Text('Hello there!'),
+                                leading: Icon(
+                                  Icons.work,
+                                  color: Colors.white,
+                                ),
+                              )
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  );
+                },
+              ))
+            ],
           ),
         ))
       ],

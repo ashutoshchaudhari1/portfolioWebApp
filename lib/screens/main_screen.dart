@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portfoliowebapp/util/util.dart';
 import 'package:portfoliowebapp/widgets/body.dart';
+import 'package:portfoliowebapp/widgets/button_row.dart';
 import 'package:portfoliowebapp/widgets/contact_button.dart';
 
 class Portfolio extends StatelessWidget {
@@ -34,7 +36,7 @@ class Portfolio extends StatelessWidget {
             buttonText: 'contact me',
             icon: Icon(Icons.send_sharp),
             onPressed: () {
-              print("ashu.4chaudhari@gmail.com");
+              launchMailto();
             },
           )
         ],
@@ -52,51 +54,6 @@ class Portfolio extends StatelessWidget {
           ),
         )
       ]),
-    );
-  }
-}
-
-class ButtonRow extends StatelessWidget {
-  const ButtonRow({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: [
-        Container(
-          color: Color(0XFFFBEFD9),
-          child: Row(
-            children: [
-              TextButton.icon(
-                  onPressed: () {},
-                  icon: Image.asset(
-                    'assets/images/instagram.png',
-                    width: 15,
-                    height: 15,
-                  ),
-                  label: Text('')),
-              TextButton.icon(
-                  onPressed: () {},
-                  icon: Image.asset(
-                    'assets/images/linkdn.png',
-                    width: 15,
-                    height: 15,
-                  ),
-                  label: Text('')),
-              TextButton.icon(
-                  onPressed: () {},
-                  icon: Image.asset(
-                    'assets/images/twitter.png',
-                    width: 15,
-                    height: 15,
-                  ),
-                  label: Text('')),
-            ],
-          ),
-        )
-      ],
     );
   }
 }

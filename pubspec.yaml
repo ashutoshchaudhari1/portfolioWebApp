@@ -23,6 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher: ^6.0.9
+  mailto: ^2.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -47,9 +49,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/background.jpg
-     - assets/images/instagram.jpg
-     - assets/images/linkdn.jpg
-     - assets/images/twitter.jpg
+     - assets/images/
+     
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
