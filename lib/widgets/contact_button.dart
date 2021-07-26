@@ -26,11 +26,11 @@ class ContactButton extends StatelessWidget {
             onPressed();
           },
           icon: Padding(
-            padding: const EdgeInsets.all(7.0),
+            padding: const EdgeInsets.all(8.0),
             child: icon,
           ),
           label: Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(8.0),
             child: Text(buttonText,
                 style: TextStyle(
                   color: Colors.black,

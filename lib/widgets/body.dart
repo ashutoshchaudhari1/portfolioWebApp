@@ -36,7 +36,7 @@ class Body extends StatelessWidget {
                       alignment: Alignment.centerLeft,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
-                            horizontal: 75, vertical: 60),
+                            horizontal: 75, vertical: 125),
                         child: ContactButton(
                             buttonText: 'Drop me a line',
                             icon: Icon(Icons.mail_outline),
